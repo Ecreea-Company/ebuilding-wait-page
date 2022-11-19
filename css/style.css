@@ -1,0 +1,71 @@
+.nav {
+  position: relative;
+  max-width: 14.75rem;
+  margin: auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/imagen_building.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Roboto";
+}
+
+.hero {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(230, 44, 31, 0.9);
+  mix-blend-mode: multiply;
+}
+.hero__container {
+  position: relative;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+.hero__title {
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  text-align: center;
+}
+.hero__subtitle {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  padding-top: 3.125rem;
+  text-align: center;
+}
+.hero__icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+.hero__icons .icon {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

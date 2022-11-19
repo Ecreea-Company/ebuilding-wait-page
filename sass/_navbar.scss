@@ -1,0 +1,8 @@
+@use 'mixinsfunc';
+.nav {
+    position: relative;
+    max-width: mixinsfunc.pixeles-rem(236);
+    margin: auto;
+    height: 70px;
+    @include mixinsfunc.crear-flexbox(center);
+}
