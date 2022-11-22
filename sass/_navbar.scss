@@ -5,4 +5,7 @@
     margin: auto;
     height: 70px;
     @include mixinsfunc.crear-flexbox(center);
+    @media (max-width: 550px) {
+        max-width: mixinsfunc.pixeles-rem(128);
+    }
 }
